@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="http://github.com/Nexus-bot-creator"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -15,7 +15,7 @@ export const Footer = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="http://linkedin.com/in/keshav-sharma-212918387"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -23,7 +23,7 @@ export const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:keshavsharma09538@example.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail size={24} />
