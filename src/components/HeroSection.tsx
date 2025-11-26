@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Youtube, Mail, ArrowDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export const HeroSection = () => {
@@ -44,7 +44,7 @@ export const HeroSection = () => {
 
           <div className="flex items-center justify-center gap-6">
             <a
-              href="https://github.com"
+              href="http://github.com/Nexus-bot-creator"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -52,7 +52,7 @@ export const HeroSection = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/keshav-sharma-212918387"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -60,10 +60,18 @@ export const HeroSection = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:keshavsharma09538@example.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail size={24} />
+            </a>
+            <a
+              href="https://www.youtube.com/@k-s-h1r"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Youtube size={24} />
             </a>
           </div>
         </div>

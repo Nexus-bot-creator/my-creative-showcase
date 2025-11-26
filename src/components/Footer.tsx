@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Youtube ,Mail } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -27,6 +27,14 @@ export const Footer = () => {
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail size={24} />
+            </a>
+            <a
+              href="https://www.youtube.com/@k-s-h1r"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Youtube size={24} />
             </a>
           </div>
           <p className="text-muted-foreground text-center">

@@ -1,34 +1,23 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Youtube} from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 
 const projects = [
   {
-    title: "Dashboard Analytics",
-    description: "A comprehensive analytics dashboard with real-time data visualization and insights",
+    title: "SIH project (AI- internship finder)",
+    description: "A protoype of a website that gives proper internship and insights",
     image: project1,
-    tags: ["React", "TypeScript", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://lovable.dev/projects/a951c33d-54cf-4b60-8459-182ed42c5b61",
   },
   {
-    title: "E-Commerce App",
-    description: "Modern mobile-first e-commerce application with seamless checkout experience",
+    title: "DS-Projects",
+    description: "All Data Science internals (1,2) and assignment (2025) explained via video through videos",
     image: project2,
-    tags: ["React Native", "Node.js", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Brand Identity",
-    description: "Complete brand identity design system with logo, colors, and guidelines",
-    image: project3,
-    tags: ["Figma", "Design System", "Branding"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tags: ["Internal-1", "Internal-2", "Assignment"],
+    youtubeUrl: "https://www.youtube.com/@k-s-h1r",
   },
 ];
 
@@ -72,18 +61,21 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} className="mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} className="mr-2" />
-                      Code
-                    </a>
-                  </Button>
+                  {index === 0 ? (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github size={16} className="mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                        <Youtube size={16} className="mr-2" />
+                        Youtube
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

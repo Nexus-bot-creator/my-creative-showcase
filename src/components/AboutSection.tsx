@@ -6,6 +6,11 @@ export const AboutSection = () => {
     <section id="about" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
+          <img
+            src="/profile copy.jpg"
+            alt="Profile"
+            className="mx-auto rounded-full w-32 h-32 mb-6 mt-8 object-cover"
+          />
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About Me</h2>
           <p className="text-lg text-muted-foreground">
             I'm a passionate developer and designer with a love for creating innovative digital

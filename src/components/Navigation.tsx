@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,6 +59,7 @@ export const Navigation = () => {
               Projects
             </button>
             <Button onClick={() => scrollToSection("contact")}>Contact</Button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,6 +95,9 @@ export const Navigation = () => {
             <Button onClick={() => scrollToSection("contact")} className="w-full">
               Contact
             </Button>
+            <div className="flex items-center">
+              <ThemeToggle />
+            </div>
           </div>
         )}
       </div>
